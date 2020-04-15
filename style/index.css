@@ -46,3 +46,116 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a, img, nav, section, header, footer,h1{
+    border: 2px solid;
+    padding: 5px;
+}
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    font-size: 30px;
+    text-decoration: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+nav{
+    /*background-color: yellowgreen;*/
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-around;
+}
+ a{
+   background-color: yellowgreen;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+a:hover{
+    background-color: lightsalmon;
+}
+/* projects button, image overlay*/
+section.projects-button img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.projects-button{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2.centered{
+    color: yellowgreen;
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.preview-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.preview-section img{
+    display: flex;
+    flex-direction: row;
+    padding: 150px;
+}
+footer a{
+    padding: 20px;
+}
+/*Projects Page*/
+#Projects h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*Contact Page*/
+#Contact h1{
+    display: fles;
+    flex-direction: row;
+    justify-content: center;
+}
+#Contact section.Contact-Info{
+    padding: 300px;
+}
+#Contact section.Contact-Info p{
+    text-align: center;
+}
+#Contact footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/*About Page*/
+#About h1{
+    display: fles;
+    flex-direction: row;
+    justify-content: center;
+}
+#About p{
+    margin: 20%;
+}
+body{
+    background-color: yellowgreen;
+}
