@@ -51,6 +51,7 @@ a, img, nav, section, header, footer,h1{
     border: 2px solid;
     padding: 5px;
 }
+
 /*header*/
 header{
     display: flex;
@@ -58,7 +59,7 @@ header{
     justify-content: space-between;
 }
 h1{
-    font-size: 30px;
+    font-size: 3.0rem;
     text-decoration: solid;
     display: flex;
     flex-direction: row;
@@ -104,7 +105,7 @@ section.projects-button img{
 }
 h2.centered{
     color: yellowgreen;
-    font-size: 50px;
+    font-size: 5.0rem;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -119,10 +120,10 @@ h2.centered{
 .preview-section img{
     display: flex;
     flex-direction: row;
-    padding: 150px;
+    padding: 20vh;
 }
 footer a{
-    padding: 20px;
+    padding: 2.5vh;
 }
 /*Projects Page*/
 #Projects h1{
@@ -132,7 +133,7 @@ footer a{
 }
 /*Contact Page*/
 #Contact h1{
-    display: fles;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -158,4 +159,20 @@ footer a{
 }
 body{
     background-color: yellowgreen;
+}
+@media(max-width: 500px){
+    nav{
+        flex-direction: column;
+    }
+    .preview-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+}
+@media(max-width: 800px){
+    body{
+        background-color: thistle;
+    }
 }
